@@ -106,6 +106,7 @@ void protopirate_settings_load(ProtoPirateSettings* settings) {
         //     emulate_temp = 0;
         // }
         settings->emulate_feature_enabled = (emulate_temp == 1);
+        FURI_LOG_I(TAG, "EmulateFeature is enabled");
 #endif
 
         uint32_t check_saved_temp = 0;
