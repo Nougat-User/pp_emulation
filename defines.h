@@ -26,7 +26,7 @@
 #define EMBEDDED_FALS
 
 // ****Add logs back for debugging and reporting problems ****
-#define REMOVE_LOGS
+//#define REMOVE_LOGS
 
 // **** DO NOT TOUCH! ****
 #ifdef REMOVE_LOGS
