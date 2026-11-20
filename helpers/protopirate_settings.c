@@ -100,13 +100,12 @@ void protopirate_settings_load(ProtoPirateSettings* settings) {
         settings->tx_power = (uint8_t)tx_power_temp;
 
 #ifdef ENABLE_EMULATE_FEATURE
-        uint32_t emulate_temp = 0;
+        //uint32_t emulate_temp = 0;
         // if(!flipper_format_read_uint32(ff, "EmulateFeature", &emulate_temp, 1)) {
         //     FURI_LOG_I(TAG, "EmulateFeature key missing, defaulting to disabled");
         //     emulate_temp = 0;
         // }
-        settings->emulate_feature_enabled = (emulate_temp == 1);
-        FURI_LOG_I(TAG, "EmulateFeature is enabled");
+        settings->emulate_feature_enabled = 1;
 #endif
 
         uint32_t check_saved_temp = 0;
